@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "fastdisenchant",
+	"version": "1.0.0",
+	"name": "FastDisenchant",
+	"description": "Professional Grindstone automation tool with strict inventory safety.",
+	"authors": [
+		"songquan"
+	],
+	"contact": {
+		"homepage": "https://github.com/c-songquan/FastDisenchant",
+		"sources": "https://github.com/c-songquan/FastDisenchant"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/itempro/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.itempro.FastDisenchant"
+		],
+		"client": [
+			"com.itempro.FastDisenchant"
+		]
+	},
+	"mixins": [
+		"itempro.mixins.json",
+		{
+			"config": "itempro.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
